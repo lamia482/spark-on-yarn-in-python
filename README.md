@@ -39,7 +39,7 @@ which scala
 验证是否安装成功
 ## 2. 安装spark
 选择进spark的[官网](http://spark.apache.org/downloads.html)下载已经编译好的文件
-![enter description here](./images/下载spark.png)，解压到
+![enter description here](./images/下载spark.jpg)，解压到
 **/data/e0024/workspace/spark/pyspark-2.7.3**进入该目录执行
 ``` bash
 export SPARK_HOME=/data/e0024/workspace/spark/pyspark-2.7.3
