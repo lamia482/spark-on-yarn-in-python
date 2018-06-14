@@ -138,6 +138,7 @@ export HADOOP_CONF_DIR=${HADOOP_HOME}etc/hadoop
 ![enter description here](./images/spark-env-sh.png)
 
 1. 打开${HADOOP_CONF_DIR}/hadoop_env.sh
+并修改JAVA_HOME的值
 ``` txt
 export JAVA_HOME="/data/e0024/workspace/spark/jdk1.8.0_171"
 ```
@@ -167,7 +168,7 @@ start-dfs.sh && jps
 ``` bash
 start-yarn.sh && jps
 ```
-应该出现下图，其中Worker是因为我在slaves文件中写入了master0所以才会有，如果没有将主节点设置为工作节点Worker是不会有的
+应该出现下图，
 ![enter description here](./images/start-yarn-sh.png)
 有ResourceManager出现才证明yarn开启成功，若不成功则查看
 **/data/e0024/workspace/spark/hadoop-2.7.6/logs/yarn-e0024-resourcemanager-IMGPROC-1.log**日志文件，根据错误提示修改前面的配置文件， 若成功继续执行
@@ -175,7 +176,7 @@ start-yarn.sh && jps
 ``` bash
 start-all.sh && jps
 ```
-应该出现
+应该出现，其中Worker是因为我在slaves文件中写入了master0所以才会有，如果没有将主节点设置为工作节点Worker是不会有的
 ![enter description here](./images/start-all-sh.png)
 
 # 1. Spark简介
